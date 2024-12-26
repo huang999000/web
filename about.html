@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="旅趣玩家">
+    <meta name="description" content="旅趣玩家 Tripify Life 是專注於旅遊靈感與實用資訊的品牌，致力於提供個性化行程建議、在地文化體驗與永續旅遊理念，讓每段旅程都成為探索生活美好的契機。">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="keywords" content="旅趣玩家, Tripify Life, 旅遊品牌, 旅遊靈感, 實用資訊, 獨特旅行體驗, 自然美景, 文化探險, 城市小旅行, 旅遊行程建議, 熱門景點推薦, 在地美食, 旅遊技巧, 永續旅遊, 低碳旅行, 背包客, 休閒旅人, 最佳數位行銷旅遊品牌獎, 最具影響力旅遊內容創作者, 永續旅遊推廣, 數位旅遊平台, 旅行者最愛品牌, 最受信任旅遊平台, 旅遊優惠, 會員專屬優惠, 季節限定折扣, 團體旅遊優惠, 節日促銷, 聯名優惠, 旅遊分享獎勵, 數位化旅遊, 個性化行程, 深度文化旅遊, 後疫情旅遊復甦, 本地深度旅遊, 台灣旅遊資訊, 客製化旅遊, 健康養生旅遊, 綠色旅行, 行動旅遊平台, AI旅遊推薦, 旅遊市場分析, 永續發展旅遊">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>旅趣玩家-關於我們(About)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 自定義的css放最後 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- GA追蹤分析 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZMXH6MR1R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EZMXH6MR1R');
+    </script>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <!-- <a>：超連結，href="#"：#表示連結的對象(網頁名稱) -->
+          <a class="navbar-brand" href="#">旅趣玩家</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- herf連結為自己的網頁，白字改為要顯示的字，共6個 -->
+                <a class="nav-link" href="index.html">首頁(Home)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">關於我們(About)</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html">目的地探索(Destination)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="itinerary.html">旅遊行程(Itinerary)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">旅遊部落格（Blog）</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-157900.url.tw" target="_blank">聯絡我們（Contact）</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- div 無語意，故後面加id=carouselExampleIndicators(可自行取名，無作用，除非後面有用到它)，1.解決無語意問題，2.控制：切換圖片 -->
+      <!-- data-bs-ride="carousel：設定輪播圖初始化 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <!-- 切換圖片的按鈕，若4張就要有4個按鈕，改data-bs*slide-to="0"，aria-label=""Slide 1"，表示第一張圖片 -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- active：表示由此張開始輪播；data-bs-interval="3000"：設定圖片輪播的秒數，每張圖都要加這行 -->
+          <div class="carousel-item active"  data-bs-interval="3000">
+            <!-- 首頁輪播圖*4張，img選webp檔，alt、title、aria-label，三個都打相關名稱 -->
+            <img src="images/index/taipei-101-1920-ok.webp" class="d-block w-100" alt="燈光優美的台北101大樓" title="燈光優美的台北101大樓" aria-label="燈光優美的台北101大樓">
+            <!-- 輪播圖加入字幕，d-none：若字太多，在手機觀看時則隱藏字幕；d-md-block：在給定的螢幕區間上顯示元素 -->
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">台北101大樓</h4>
+              <p class="display-5">台灣著名景點與指標建築</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/taipei_1920-ok.webp" class="d-block w-100" alt="傍晚雨後的台北中正紀念堂自由廣場" title="傍晚雨後的台北中正紀念堂自由廣場" aria-label="傍晚雨後的台北中正紀念堂自由廣場">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">自由廣場</h4>
+              <p class="display-5">隨心所欲</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/taroko-1920.webp" class="d-block w-100" alt="太魯閣國家公園的日出" title="太魯閣國家公園的日出" aria-label="太魯閣國家公園的日出">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">太魯閣</h4>
+              <p class="display-5">日出</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/love river-1920ok.webp" class="d-block w-100" alt="高雄愛河love" title="高雄愛河love" aria-label="高雄愛河love">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">高雄愛河</h4>
+              <p class="display-5">LOVE</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <!-- emmet：.row>.col-lg-6*2或，div.row>div.col-lg-6*2 -->
+         <!-- 新增一列，分2欄 -->
+       <div class="row">
+        <div class="col-lg-6">
+            <div class="card mt-5">
+                <img src="images/about/about us-500.webp" class="旅趣玩家-關於我們" alt="旅趣玩家-關於我們" title="旅趣玩家-關於我們" aria-label="旅趣玩家-關於我們">
+                <div class="card-body">
+                  <h2 class="">品牌簡介</h2>
+                  <p class="card-text indent">旅趣玩家 Tripify Life 是一個以「探索世界，發現生活之美」為核心理念的旅遊品牌，致力於為旅人提供全方位的旅遊靈感與實用資訊，打造獨一無二的旅行體驗。我們相信每段旅程都是一次探索生活新可能的契機，無論是自然美景、文化探險，還是城市小旅行，皆能為旅人帶來深刻且難忘的回憶。</p>
+                  <p class="card-text indent">提供精選「旅遊推薦行程」、熱門景點推薦、在地美食介紹及實用旅遊技巧。我們深入挖掘各地獨特魅力，讓旅人不僅欣賞風景，更能體驗當地文化。我們亦重視永續旅遊，提倡尊重自然與文化的旅行方式，鼓勵旅人用心感受旅途意義。無論你是冒險的背包客或追求舒適的休閒旅人，旅趣玩家 Tripify Life 都將陪伴你探索世界每個角落，發現屬於你的旅遊故事。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card mt-5">
+                <img src="images/about/trophy500.webp" class="獎盃" alt="獎盃" title="獎盃" aria-label="獎盃">
+                <div class="card-body">
+                  <h2 class="">獲獎事蹟</h2>
+                  <h4>2020年</h4>
+                  <p class="card-text p">獲頒「最佳數位行銷旅遊品牌獎」</p>
+                  <h4>2021年</h4>
+                  <p class="card-text p">獲得「最具影響力旅遊內容創作者獎」<br>
+                    獲頒「永續旅遊推廣特別獎」</p>
+                  <h4>2022年</h4>
+                  <p class="card-text p">榮獲「年度全球旅遊品牌金獎」<br>
+                    入選「十大數位旅遊平台」</p>
+                  <h4>2023年</h4>
+                  <p class="card-text p">獲得「最佳使用者體驗設計獎」<br>
+                    被評選為「旅行者最愛品牌」</p>
+                  <h4>2024年</h4>
+                  <p class="card-text p">獲頒「全球旅遊創新領袖獎」<br>
+                    榮獲「最受信任旅遊平台獎」</p>
+                    <p>旅趣玩家 Tripify Life 的每一項成就，皆源自於對旅人需求的深刻理解與不懈努力，持續為全球旅行者創造獨特且值得回味的旅遊體驗。</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="row mb-5">
+        <div class="col-lg-6">
+            <div class="card mt-5">
+                <img src="images/about/discount-500.webp" class="旅遊優惠" alt="旅遊優惠" title="旅遊優惠" aria-label="旅遊優惠">
+                <div class="card-body">
+                  <!-- 先到head裡面增加link...icon,再到w3cschool網站，找icon，複製 i...i，貼上至此 -->
+                  <h2 class="" style="color: red;"><i class="material-icons" style="font-size:30px;color:red">monetization_on</i>旅遊優惠
+                  </h2>
+                  <h4>1.首次註冊專屬優惠</h4>
+                  <p class="card-text p">內容：新會員首次註冊，即可享全站產品85折優惠<br>
+                    有效期：註冊後30天內可使用。<br>
+                    適用對象：新用戶。</p>
+                  <h4>2.季節限定折扣</h4>
+                  <p class="card-text p">內容：春季賞花、夏季避暑、秋季楓紅、冬季暖心旅遊行程<span class="text-darkred">最低7折</span>起。<br>
+                    有效期：按季節活動安排。<br>
+                    適用對象：全站用戶。</p>
+                  <h4>3.團體旅遊優惠</h4>
+                  <p class="card-text p">內容：團體旅遊方案（4人以上），每人可享<span class="text-darkred">額外95折</span>。<br>
+                    有效期：全年有效。<br>
+                    適用對象：預訂團體行程的旅客。</p>
+                  <h4>4.忠誠會員回饋計劃</h4>
+                  <p class="card-text p">內容：每消費滿 100 元可累積 1 點積分，積分可折抵未來消費（1點=1元）。<br>
+                    額外福利：累積達500點，免費贈送旅遊行程電子指南或旅遊配件（如行李吊牌）。</p>
+                  <h4>5.節日限時促銷</h4>
+                  <p class="card-text p">內容：特定節日（如母親節、雙11、聖誕節）推出特別折扣<span class="text-darkred">最高5折</span>優惠。<br>
+                    有效期：指定節日當月。<br>
+                    適用對象：全站用戶。</p>
+                  <h4>6.與合作夥伴聯名優惠</h4>
+                  <p class="card-text p">內容：與航空公司、住宿平台合作，提供套餐折扣，如 機票+住宿8折。<br>
+                    有效期：與合作夥伴活動期間一致。<br>
+                    適用對象：預訂聯名套餐的用戶。</p>
+                  <h4>7.旅遊分享獎勵</h4>
+                  <p class="card-text p">內容：分享旅遊心得並標註品牌社群，即可獲得 $50 折扣券，累積3次分享再贈送 $100 折扣券。<br>
+                    有效期：分享後即發效。<br>
+                    適用對象：社群活躍用戶。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card mt-5">
+                <img src="images/about/market analysis-500.webp" class="市場分析" alt="市場分析" title="市場分析" aria-label="市場分析">
+                <div class="card-body">
+                  <h2 class="">市場分析</h2>
+                  <h4>1.市場趨勢</h4>
+                  <p class="card-text">數位化與行動化<br>
+                    全球旅遊業數位轉型加速，越來越多旅客透過線上平台規劃行程和訂購服務。<br>
+                    行動裝置成為旅遊資訊搜尋和交易的主要工具，簡便的用戶介面與功能是核心競爭力。<br>
+                    個性化需求增長<br>
+                    越來越多旅客希望獲得定制化的行程和獨特體驗，例如深度文化旅遊、永續旅遊及健康養生之旅。<br>
+                    永續旅遊崛起<br>
+                    旅客越來越關注旅行對環境和在地社區的影響，選擇綠色低碳旅行的比例逐年增加。<br>
+                    後疫情旅遊復甦<br>
+                    旅遊需求在疫情後強勢反彈，國內旅遊和短程國際旅行需求激增，安全和靈活性成為旅遊選擇的重要因素。</p>
+                  <h4>2.目標客群</h4>
+                  <p class="card-text">年輕旅遊愛好者，年齡層：20-35歲<br>
+                    需求：喜愛自由行、探索新奇事物和體驗地方文化，偏好高性價比的旅遊服務。<br>
+                    家庭旅客，年齡層：30-50歲家庭族群<br>
+                    需求：偏好安全、舒適的行程，注重親子互動和教育元素的旅遊活動。<br>
+                    銀髮族旅客，年齡層：50歲以上<br>
+                    需求：重視健康與養生旅遊，喜歡輕鬆的行程與自然景觀。<br>
+                    環保旅客，向往永續旅行，支持對環境友善的旅行方式和目的地。</p>
+                  <h4>3.競爭環境</h4>
+                  <p class="card-text">主要競爭者<br>
+                    國內知名旅遊平台：如 Lion Travel、KKday 等，提供多樣化的產品和優惠。<br>
+                    全球旅遊平台：如 Booking.com、Expedia 等，憑藉廣泛的覆蓋面和品牌信任度吸引用戶。<br>
+                    競爭優勢<br>
+                    旅趣玩家以台灣本地深度旅遊資訊為核心，結合客製化服務和數位行銷策略，吸引特定市場。</p>
+                  <h4>4.機會與挑戰</h4>
+                  <p class="card-text">機會<br>
+                    國內旅遊需求穩定增長，深度旅遊和文化體驗成為新趨勢。<br>
+                    政府推動地方旅遊發展政策，提供潛在資源支持。<br>
+                    技術創新（如 AI 與大數據）可提升個性化推薦的準確性和用戶體驗。<br>
+                    挑戰<br>
+                    國際旅遊市場競爭激烈，需要快速適應全球旅遊趨勢。<br>
+                    用戶忠誠度不易建立，需不斷創新以留住現有客群。<br>
+                    永續發展需求增加，如何平衡商業利益與環境保護將是挑戰。</p>
+                    <p>結論<br>
+                      旅趣玩家 Tripify Life 在專注本地化深度內容的同時，應積極投入數位化與客製化服務，並藉助技術提升用戶體驗，逐步擴大品牌影響力，抓住後疫情旅遊復甦的黃金機遇。</p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <hr>
+      </div>
+      <!-- container：容器 -->
+       <!-- class是類別 -->
+      <footer class="container">
+        <!-- float-end：懸浮靠右，#top：錨點連結(回頂端)，&copy;表示商標符號© -->
+        <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+        <p class="p">旅趣玩家 &copy; 2024</p>
+      </footer>
+    </main>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

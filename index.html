@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="旅趣玩家">
+    <!-- meta內容，都是半形逗號+空格隔開 -->
+    <meta name="description" content="九份老街懷舊氛圍濃厚, 融合山海美景與特色美食, 清境農場展現高山牧場風情, 適合親子遊, 太魯閣國家公園以壯麗峽谷和自然生態聞名, 融合文化與地質奇觀, 是旅遊必訪景點">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="keywords" content="旅趣玩家, 旅遊行程, 旅遊部落格, 九份老街, 九份, 山城老街, 懷舊氣息, 山海景致, 黃昏, 夜景, 清境農場, 清境, 南投, 霧上桃源, 高山旅遊, 牧場風情, 青青草原, 綿羊, 馬術表演, 瑪格麗特花園步道, 觀山步道, 清境小瑞士花園, 高山美景, 太魯閣國家公園, 太魯閣, 峽谷奇景, 自然生態, 太魯閣峽谷, 大理石峽谷, 白楊步道, 九曲洞步道, 燕子口, 長春祠, 清水斷崖, 原住民文化, 交通部觀光局, 台灣觀光管理, 國內旅遊安全, 飯店住宿安全, 旅遊安全須知">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>旅趣玩家-首頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <!-- fixed-top：固定導覽列 -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <!-- <a>：超連結，href="#"：#表示連結的對象(網頁名稱) -->
+          <a class="navbar-brand" href="#">旅趣玩家</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- herf連結為自己的網頁，白字改為要顯示的字，共6個 -->
+                <a class="nav-link active" aria-current="page" href="index.html">首頁(Home)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.html">關於我們(About)</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html">目的地探索(Destination)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="itinerary.html">旅遊行程(Itinerary)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">旅遊部落格（Blog）</a>
+              </li>
+              <li class="nav-item">
+                <!-- 智邦留言板網址，複製貼上到此處，加上target _blank表示開新分頁 -->
+                <!-- 留言板剛留言是不會看到的，要先審核通過 -->
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-157900.url.tw" target="_blank">聯絡我們（Contact）</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- div 無語意，故後面加id=carouselExampleIndicators(可自行取名，無作用，除非後面有用到它)，1.解決無語意問題，2.控制：切換圖片 -->
+      <!-- data-bs-ride="carousel：設定輪播圖初始化 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <!-- 切換圖片的按鈕，若4張就要有4個按鈕，改data-bs*slide-to="0"，aria-label=""Slide 1"，表示第一張圖片 -->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- active：表示由此張開始輪播；data-bs-interval="3000"：設定圖片輪播的秒數，每張圖都要加這行 -->
+          <div class="carousel-item active"  data-bs-interval="3000">
+            <!-- 首頁輪播圖*4張，img選webp檔，alt、title、aria-label，三個都打相關名稱 -->
+            <img src="images/index/taipei-101-1920-ok.webp" class="d-block w-100" alt="燈光優美的台北101大樓" title="燈光優美的台北101大樓" aria-label="燈光優美的台北101大樓">
+            <!-- 輪播圖加入字幕，d-none：若字太多，在手機觀看時則隱藏字幕；d-md-block：在給定的螢幕區間上顯示元素 -->
+            <!-- bg-blue：custom裡面有設透明度，key在div是一整個區塊藍色 -->
+            <div class="carousel-caption d-none d-md-block">
+              <!-- d-inline bg-dark：設定符合文字大小的背景色，但如果h4跟p裡面都有，inline會將其合併成一行 -->
+              <h4 class="display-1 d-inline bg-blue">台北101大樓</h4>
+              <p class="display-5 bg-blue">台灣著名景點與指標建築</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/taipei_1920-ok.webp" class="d-block w-100" alt="傍晚雨後的台北中正紀念堂自由廣場" title="傍晚雨後的台北中正紀念堂自由廣場" aria-label="傍晚雨後的台北中正紀念堂自由廣場">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">自由廣場</h4>
+              <p class="display-5">隨心所欲</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/taroko-1920.webp" class="d-block w-100" alt="太魯閣國家公園的日出" title="太魯閣國家公園的日出" aria-label="太魯閣國家公園的日出">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">太魯閣</h4>
+              <p class="display-5">日出</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/index/love river-1920ok.webp" class="d-block w-100" alt="高雄愛河love" title="高雄愛河love" aria-label="高雄愛河love">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="display-1">高雄愛河</h4>
+              <p class="display-5">LOVE</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- 三個欄位，emmet打：div.col-lg-4 order-2 mt-5*3，按enter -->
+          <!-- col-lg-4：要跨越的欄數，均分12欄，要分三格就是跨4欄 -->
+          <!-- order-lg-0：lg是指裝置的排版，左到右的排版順序，由0開始； -->
+          <!-- mt：上外距，m指外部，t指上方，間距0~5共6級，5為最大 -->
+          <!-- rounded-circle：類別，圓角矩形；w-100：指繼承父件寬度100%，屬性：border-radius: 50% -->
+          <!-- alt：照片不見時所顯示的文字，title：滑鼠游標停在照片上會顯示的文字，aria-label：有無障礙裝置時口述影像 -->
+          <div class="col-lg-4 order-lg-1 mt-5 ">
+            <a href="https://newtaipei.travel/zh-tw/attractions/detail/109990" target="_blank"><img src="images/index/jiufen-old-street-800ok.webp" class="rounded-circle w-100" alt="九份老街" title="九份老街" aria-label="九份老街"></a>
+            <div class="card-body">
+              <h2 class="text-center mt-4 h2-purple">九份老街</h2>
+              <p class="card-text indent">九份老街位於台灣新北市瑞芳區，是台灣最具特色的山城老街之一，融合濃厚的懷舊氣息與絕佳的山海景致，吸引遊客前來探索。九份曾因金礦開採而繁盛，隨著礦業衰退，逐漸轉型為以歷史與文化為核心的觀光景點。老街狹窄蜿蜒的巷弄中，排列著許多紅燈籠，營造出濃厚的復古氛圍。遊客可以品嚐到九份著名的美食，例如芋圓、草仔粿和紅糟肉圓等，感受傳統台灣風味。此外，老街上的茶館提供了品茗與眺望遠山大海的絕佳場所，是享受悠閒時光的好選擇。九份的黃昏與夜景尤為迷人，夕陽染紅山巒，老街燈火點亮後更添詩意。</p>
+              <!-- class="text-center"：將按鈕位置放在中間，若要對齊左邊start，對齊右邊則為end -->
+               <!-- class裡的p是自定義不要縮排(custom.css -->
+              <!-- target：開啟頁面方式，_blank：開新分頁 -->
+              <!-- class內的btn代表button(按鈕)，btn-primary：設定按鈕顏色(到bootstrap網站看顏色單字) -->
+              <!-- role="button"：告知搜尋引擎，將連結當做按鈕 -->
+              <p class="text-center"><a href="https://newtaipei.travel/zh-tw/attractions/detail/109990" target="_blank" class="btn btn-primary p" role="button">九份老街</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0 mt-5">
+            <a href="https://www.cingjing.gov.tw/" target="_blank"><img src="images/index/qingjing-farm-800ok.webp" class="rounded-circle w-100" alt="清境農場" title="清境農場" aria-label="清境農場"></a>
+            <div class="card-body">
+              <h2 class="text-center mt-4 h2-purple">清境農場</h2>
+              <p class="card-text indent">清境農場位於台灣南投縣仁愛鄉，海拔約1,750公尺，是一處以自然景觀與牧場風情聞名的高山旅遊勝地，有「霧上桃源」之美譽。農場內最具代表性的景點是青青草原，大片綠茵草地上放養著可愛的綿羊與馬匹，遊客可以近距離接觸，甚至親手餵食，感受牧場生活的樂趣。此外，每日有定時的綿羊脫毛秀與馬術表演，吸引親子與家庭旅客的喜愛。清境農場還有步道可供探索，如瑪格麗特花園步道、觀山步道等，讓遊客在大自然的懷抱中盡情呼吸新鮮空氣。周邊的清境小瑞士花園也以浪漫的歐式風格吸引許多拍照打卡愛好者。無論是追求自然寧靜、體驗農牧文化，還是享受高山美景，清境農場都能滿足旅人對放鬆與探索的需求，是台灣中部必訪的旅遊景點之一。</p>
+              <p class="text-center"><a href="https://www.cingjing.gov.tw/" target="_blank" class="btn btn-primary p" role="button">清境農場</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-2 mt-5">
+            <a href="https://www.taroko.gov.tw/" target="_blank"><img src="images/index/taroko-800ok.webp" class="rounded-circle w-100" alt="太魯閣國家公園" title="太魯閣國家公園" aria-label="太魯閣國家公園"></a>
+            <div class="card-body">
+              <h2 class="text-center mt-4 h2-purple">太魯閣國家公園</h2>
+              <p class="card-text indent">太魯閣國家公園座落於花蓮、臺中及南投三縣市，是臺灣第四座成立的國家公園，以其峽谷奇景和多樣的自然生態聞名。公園內最具代表性的地貌是太魯閣峽谷，由立霧溪長期沖刷形成的大理石峽谷，展示出壯觀的斷崖、深谷和蜿蜒溪流，是地質與自然力量的最佳見證。遊客可沿著步道深入探索，包括白楊步道、九曲洞步道與燕子口等，近距離欣賞峭壁、瀑布和懸崖上的燕巢景觀，體驗壯觀的自然美景。公園內還有多處特色景點，如天祥的靜謐宗教氛圍、長春祠的歷史意義，以及清水斷崖的壯麗海景，為旅人提供多元的觀光體驗。太魯閣國家公園也擁有豐富的生態系統，包括許多台灣特有種動植物。這裡也是原住民太魯閣族的家園，遊客有機會接觸到其獨特的文化與傳統。</p>
+              <p class="text-center"><a href="https://www.taroko.gov.tw/" target="_blank" class="btn btn-primary p" role="button">太魯閣國家公園</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- hr：水平線 -->
+        <hr>
+        <!-- Emmet打這樣：div.row.my-5 -->
+        <!-- div：標籤，可打，可不打；row：橫列；my-5：m外部間距，y代表縱軸，上跟下一起，5級 -->
+        <div class="row my-5">
+          <!-- Emmet：.col.md-7+.col.md-5，宣告分成2欄，寬度為7跟5 -->
+          <div class="col-md-7">
+            <h2>交通部觀光局<span class="text-muted fs-5"> 台灣最高觀光管理部門</span></h2>
+            <p class="indent">交通部觀光局是中華民國觀光旅遊事務的最高主管機關，隸屬於交通部之下。除了負責規劃、執行並管理觀光旅遊事務之外，同時肩負起向國際推廣臺灣觀光的責任，亦是各國家級風景特定區的主管機關。</p>
+          </div>
+          <div class="col-md-5">
+            <!-- img加入圖片，class宣告img fluid：圖片滿版，mx-auto：照片左右水平置中 -->
+            <img src="images/index/escalator-600-ok.webp" alt="交通部觀光局辦公大樓" class="img-fluid mx-auto" title="交通部觀光局辦公大樓" aria-label="交通部觀光局辦公大樓">
+          </div>
+        </div>
+        <hr>
+        <div class="row my-5">
+          <!-- Emmet：.col.md-7+.col.md-5，宣告分成2欄，寬度為7跟5 -->
+          <div class="col-md-7 order-md-1">
+            <h2>國內旅遊安全須知<span class="text-muted fs-5"> 快樂出門，平安回家</span></h2>
+            <p class="indent">請著輕便服裝，個人裝備：相機、遮陽帽、雨具、泳具、私人必備藥物、身分證、健保卡等，行前注意有關交通狀況及氣象報導；團體活動，請注意集合時間、地點，請勿擅自前往危險地區，遵守警告、禁止標誌之規定，聽從服務人員解說及指示，以維護安全。</p>           
+          </div>
+          <div class="col-md-5 order-md-0">
+            <!-- img加入圖片，class宣告img fluid：圖片滿版，mx-auto：照片左右水平置中 -->
+            <img src="images/index/camera-600-ok.webp" alt="國內旅遊安全須知" class="img-fluid mx-auto" title="國內旅遊安全須知" aria-label="國內旅遊安全須知">
+          </div>
+        </div>
+        <hr>
+        <div class="row my-5">
+          <!-- Emmet：.col.md-7+.col.md-5，宣告分成2欄，寬度為7跟5 -->
+          <div class="col-md-7">
+            <h2>旅館住宿安全<span class="text-muted fs-5"> 住飯店必知安全常識</span></h2>
+            <p class="indent">入住房間時防止陌生人尾隨，掛上門鍊鎖，重要物品妥善保管，檢查房間設施、確認貓眼、檢查鏡子、查看逃生線路、不要輕易給陌生人開門、晚上不要獨自外出、留意針孔攝影機。</p>
+          </div>
+          <div class="col-md-5">
+            <!-- img加入圖片，class宣告img fluid：圖片滿版，mx-auto：照片左右水平置中 -->
+            <img src="images/index/bedroom-600-ok.webp" alt="飯店房間" class="img-fluid mx-auto" title="飯店房間" aria-label="飯店房間">
+          </div>
+        </div>
+        <hr>
+      </div>
+      <!-- container：容器 -->
+       <!-- class是類別 -->
+      <footer class="container">
+        <!-- float-end：懸浮靠右，#top：錨點連結(回頂端)，&copy;表示商標符號© -->
+        <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+        <p class="p">旅趣玩家 &copy; 2024</p>
+      </footer>
+    </main>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
